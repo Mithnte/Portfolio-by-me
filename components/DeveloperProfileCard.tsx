@@ -1,4 +1,4 @@
-use client";
+"use client";
 
 import { motion } from "framer-motion";
 import { MapPin, FolderGit2, Star, Download, Lock } from "lucide-react";
