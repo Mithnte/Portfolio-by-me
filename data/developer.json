@@ -1,0 +1,43 @@
+{
+  "name": "Mithnte",
+  "handle": "@mithnte",
+  "avatarInitials": "MT",
+  "bio": "Building tools across game engines and virtual economies. Roblox, Blender, FiveM.",
+  "role": "Plugin & Tools Developer",
+  "location": "Ambon, ID",
+  "stats": {
+    "projects": 6,
+    "totalStars": 2040,
+    "totalDownloads": 106050
+  },
+  "connectors": [
+    {
+      "id": "github",
+      "label": "GitHub",
+      "url": "https://github.com/Mithnte",
+      "connected": true,
+      "kind": "static"
+    },
+    {
+      "id": "discord",
+      "label": "Discord",
+      "url": "https://discord.gg/your-invite-code",
+      "connected": false,
+      "kind": "oauth"
+    },
+    {
+      "id": "youtube",
+      "label": "YouTube",
+      "url": "https://youtube.com/@your-channel",
+      "connected": true,
+      "kind": "static"
+    },
+    {
+      "id": "twitter",
+      "label": "Twitter / X",
+      "url": "https://x.com/your-handle",
+      "connected": true,
+      "kind": "static"
+    }
+  ]
+}
