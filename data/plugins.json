@@ -1,0 +1,225 @@
+[
+  {
+    "id": "rbx-001",
+    "platform": "Roblox",
+    "name": "GridSnap Terrain Editor",
+    "description": "Snaps part placement to a configurable voxel grid for precision terrain and dungeon building.",
+    "version": "v1.2.4",
+    "status": "Stable",
+    "downloads": 18420,
+    "stars": 342,
+    "latencyMs": 12,
+    "cpuLoad": 8,
+    "repoUrl": "https://github.com/Mithnte/gridsnap-terrain-editor",
+    "installSteps": [
+      "Open Roblox Studio and go to the Toolbox panel.",
+      "Search for \"GridSnap Terrain Editor\" or paste the plugin ID 9284710213.",
+      "Click Install, then reload Studio to activate the toolbar button.",
+      "Open the GridSnap panel from the Plugins tab and set your grid size."
+    ],
+    "features": [
+      "Configurable voxel grid from 0.5 to 16 studs",
+      "Snap-to-surface raycasting for uneven terrain",
+      "Undo-safe batch placement for up to 500 parts",
+      "Live grid overlay rendered in the 3D viewport"
+    ],
+    "hotkeys": [
+      { "combo": "Ctrl + G", "action": "Toggle grid overlay" },
+      { "combo": "Shift + [", "action": "Decrease grid size" },
+      { "combo": "Shift + ]", "action": "Increase grid size" },
+      { "combo": "Alt + S", "action": "Snap selection to grid" }
+    ],
+    "changelog": [
+      { "time": "14:02:11", "level": "INF", "message": "Syncing grid geometry cache..." },
+      { "time": "14:02:14", "level": "INF", "message": "Loaded 12 snap presets from disk" },
+      { "time": "14:02:41", "level": "WRN", "message": "Non-mesh selection detected, skipping raycast" },
+      { "time": "14:03:02", "level": "INF", "message": "Batch placement completed: 214 parts" },
+      { "time": "14:03:09", "level": "OK", "message": "Undo checkpoint saved" }
+    ]
+  },
+  {
+    "id": "rbx-002",
+    "platform": "Roblox",
+    "name": "NPC Pathweave AI",
+    "description": "Behavior-tree driven NPC pathfinding with patrol, chase, and flee states out of the box.",
+    "version": "v0.9.1",
+    "status": "Beta",
+    "downloads": 6210,
+    "stars": 118,
+    "latencyMs": 34,
+    "cpuLoad": 21,
+    "repoUrl": "https://github.com/Mithnte/npc-pathweave-ai",
+    "installSteps": [
+      "Insert the PathweaveAI ModuleScript into ServerScriptService.",
+      "Require the module in your NPC controller script.",
+      "Call Pathweave.new(npcModel, behaviorConfig) to spawn an agent.",
+      "Tune waypoints via the in-Studio Pathweave inspector widget."
+    ],
+    "features": [
+      "Behavior tree with Patrol, Chase, Flee, and Idle nodes",
+      "Automatic waypoint graph generation from PathfindingService",
+      "Line-of-sight detection with configurable cone angle",
+      "Hot-swappable behavior configs without server restart"
+    ],
+    "hotkeys": [
+      { "combo": "Ctrl + P", "action": "Open Pathweave inspector" },
+      { "combo": "F5", "action": "Simulate agent in Studio" },
+      { "combo": "Alt + W", "action": "Add waypoint at cursor" }
+    ],
+    "changelog": [
+      { "time": "09:11:02", "level": "INF", "message": "Rebuilding waypoint graph for map_v3..." },
+      { "time": "09:11:20", "level": "WRN", "message": "Isolated node detected near (120, 4, -32)" },
+      { "time": "09:12:00", "level": "INF", "message": "Behavior tree compiled: 3 agents linked" },
+      { "time": "09:12:44", "level": "ERR", "message": "Agent NPC_Guard_02 lost line-of-sight target" },
+      { "time": "09:13:01", "level": "OK", "message": "Recovered, fallback to Patrol state" }
+    ]
+  },
+  {
+    "id": "bld-001",
+    "platform": "Blender",
+    "name": "RetopoFlow Lite",
+    "description": "Fast quad-based retopology brush set for cleaning up sculpted high-poly meshes.",
+    "version": "v3.1.0",
+    "status": "Stable",
+    "downloads": 24980,
+    "stars": 511,
+    "latencyMs": 9,
+    "cpuLoad": 34,
+    "repoUrl": "https://github.com/Mithnte/retopoflow-lite",
+    "installSteps": [
+      "Download the retopoflow_lite.zip release asset.",
+      "In Blender, go to Edit > Preferences > Add-ons > Install.",
+      "Select the zip file and enable the checkbox next to RetopoFlow Lite.",
+      "Access the tool from the N-panel under the new Retopo tab."
+    ],
+    "features": [
+      "Quad-strip brush with adjustable relax strength",
+      "Auto-snap to high-poly surface via shrinkwrap modifier",
+      "Symmetry-aware stroke mirroring on X/Y/Z",
+      "One-click bake of resulting mesh to a new object"
+    ],
+    "hotkeys": [
+      { "combo": "Shift + R", "action": "Activate quad-strip brush" },
+      { "combo": "Ctrl + Shift + X", "action": "Toggle X symmetry" },
+      { "combo": "B", "action": "Bake retopo to new mesh" },
+      { "combo": "Alt + Click", "action": "Relax selected loop" }
+    ],
+    "changelog": [
+      { "time": "18:44:02", "level": "INF", "message": "Syncing grid geometry snapshot..." },
+      { "time": "18:44:19", "level": "INF", "message": "Shrinkwrap target bound to Sculpt_HighPoly" },
+      { "time": "18:45:03", "level": "WRN", "message": "Non-manifold edge detected at loop 88" },
+      { "time": "18:45:40", "level": "INF", "message": "Bake completed: 4,812 quads generated" },
+      { "time": "18:45:52", "level": "OK", "message": "New object Retopo_Mesh.001 created" }
+    ]
+  },
+  {
+    "id": "bld-002",
+    "platform": "Blender",
+    "name": "Procedural Foliage Kit",
+    "description": "Geometry-nodes based scatter system for realistic grass, bushes, and tree distribution.",
+    "version": "v2.0.6",
+    "status": "Stable",
+    "downloads": 15330,
+    "stars": 276,
+    "latencyMs": 18,
+    "cpuLoad": 46,
+    "repoUrl": "https://github.com/Mithnte/procedural-foliage-kit",
+    "installSteps": [
+      "Install the .blend asset library via the Blender Asset Browser.",
+      "Enable the Procedural Foliage Kit add-on in Preferences.",
+      "Drag the Foliage Scatter node group onto your terrain mesh.",
+      "Adjust density and wind sway values in the modifier panel."
+    ],
+    "features": [
+      "Geometry nodes scatter with density painting support",
+      "Built-in wind sway animation driver",
+      "Distance-based LOD swapping for viewport performance",
+      "12 preset foliage sets: grass, ferns, shrubs, and trees"
+    ],
+    "hotkeys": [
+      { "combo": "Ctrl + F", "action": "Open Foliage panel" },
+      { "combo": "Shift + D", "action": "Paint density weight" },
+      { "combo": "Alt + W", "action": "Toggle wind preview" }
+    ],
+    "changelog": [
+      { "time": "11:20:15", "level": "INF", "message": "Evaluating geometry node tree..." },
+      { "time": "11:20:33", "level": "INF", "message": "Scattered 22,410 instances on Terrain_Main" },
+      { "time": "11:21:02", "level": "WRN", "message": "High instance count may affect viewport FPS" },
+      { "time": "11:21:40", "level": "INF", "message": "LOD swap threshold set to 40m" },
+      { "time": "11:21:55", "level": "OK", "message": "Wind sway driver linked to Scene.frame_current" }
+    ]
+  },
+  {
+    "id": "fvm-001",
+    "platform": "FiveM",
+    "name": "QuantumHUD Framework",
+    "description": "Lightweight, modular HUD resource with NUI-based speedometer, health, and minimap widgets.",
+    "version": "v1.5.2",
+    "status": "Stable",
+    "downloads": 31240,
+    "stars": 604,
+    "latencyMs": 6,
+    "cpuLoad": 4,
+    "repoUrl": "https://github.com/Mithnte/quantumhud-framework",
+    "installSteps": [
+      "Copy the quantumhud folder into your server's resources directory.",
+      "Add ensure quantumhud to your server.cfg.",
+      "Configure widget positions in config/hud_layout.lua.",
+      "Restart the resource with restart quantumhud in the server console."
+    ],
+    "features": [
+      "NUI-rendered widgets with GPU-accelerated animations",
+      "Per-widget visibility toggles synced to player state",
+      "Exportable API for other resources to push HUD notifications",
+      "Adaptive layout for 16:9, 21:9, and 4:3 aspect ratios"
+    ],
+    "hotkeys": [
+      { "combo": "F7", "action": "Toggle HUD visibility" },
+      { "combo": "F8", "action": "Open HUD layout editor" },
+      { "combo": "Ctrl + M", "action": "Toggle minimap zoom" }
+    ],
+    "changelog": [
+      { "time": "20:05:44", "level": "INF", "message": "Syncing grid geometry for minimap tiles..." },
+      { "time": "20:05:58", "level": "INF", "message": "NUI frame mounted: 4 widgets registered" },
+      { "time": "20:06:12", "level": "WRN", "message": "Non-mesh selection detected in vehicle HUD hook" },
+      { "time": "20:06:40", "level": "INF", "message": "Speedometer bound to entity state bag" },
+      { "time": "20:06:59", "level": "OK", "message": "HUD ready, latency 6ms" }
+    ]
+  },
+  {
+    "id": "fvm-002",
+    "platform": "FiveM",
+    "name": "Dynamic Economy Bridge",
+    "description": "Cross-framework economy bridge that syncs banking, jobs, and inventory between ESX and QBCore.",
+    "version": "v0.8.0",
+    "status": "Beta",
+    "downloads": 9870,
+    "stars": 189,
+    "latencyMs": 27,
+    "cpuLoad": 15,
+    "repoUrl": "https://github.com/Mithnte/dynamic-economy-bridge",
+    "installSteps": [
+      "Place the econ_bridge resource above your framework resource in server.cfg.",
+      "Set FRAMEWORK = 'esx' or 'qbcore' in shared/config.lua.",
+      "Run the included SQL migration against your database.",
+      "Restart the server to initialize the bridge exports."
+    ],
+    "features": [
+      "Unified export API: bridge:getMoney, bridge:addJob, bridge:getInventory",
+      "Automatic schema migration between ESX and QBCore tables",
+      "Transaction logging with rollback on failed bank transfers",
+      "Webhook support for real-time economy audit logging"
+    ],
+    "hotkeys": [
+      { "combo": "/econstatus", "action": "Chat command: bridge health check" },
+      { "combo": "Ctrl + Shift + E", "action": "Open economy debug panel (admin only)" }
+    ],
+    "changelog": [
+      { "time": "16:30:09", "level": "INF", "message": "Detecting active framework..." },
+      { "time": "16:30:11", "level": "INF", "message": "QBCore detected, binding compatibility layer" },
+      { "time": "16:30:47", "level": "ERR", "message": "Migration failed on table qb_inventory, retrying" },
+      { "time": "16:31:02", "level": "OK", "message": "Migration completed on retry" },
+      { "time": "16:31:20", "level": "INF", "message": "Bridge exports registered: 14 functions" }
+    ]
+  }
+]
